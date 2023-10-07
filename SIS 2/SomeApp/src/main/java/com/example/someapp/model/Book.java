@@ -5,14 +5,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 public class Book {
 
     @Autowired
-    private PrintBook printBook;
+    private Printable printable;
 
-    public void setBook(PrintBook printBook) {
-        this.printBook = printBook;
+    public void setBook(Printable printable) {
+        this.printable = printable;
     }
 
     public String printBook(String book) {
-        return printBook.print(book);
+        return printable.print(book);
     }
 
 }

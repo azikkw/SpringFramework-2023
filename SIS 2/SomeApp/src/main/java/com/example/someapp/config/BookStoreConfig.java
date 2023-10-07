@@ -1,8 +1,8 @@
 package com.example.someapp.config;
 
 import com.example.someapp.model.Book;
-import com.example.someapp.model.Book1;
-import com.example.someapp.model.PrintBook;
+import com.example.someapp.model.GuessedBook;
+import com.example.someapp.model.Printable;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -10,8 +10,8 @@ import org.springframework.context.annotation.Configuration;
 public class BookStoreConfig {
 
     @Bean
-    public PrintBook printBook() {
-        return new Book1();
+    public Printable printBook() {
+        return new GuessedBook();
     }
 
     @Bean

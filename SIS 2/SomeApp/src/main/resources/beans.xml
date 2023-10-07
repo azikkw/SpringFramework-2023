@@ -2,8 +2,8 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-    <bean id="printBook" class="com.example.someapp.model.Book1"/>
+    <bean id="printable" class="com.example.someapp.model.GuessedBook"/>
     <bean id="book" class="com.example.someapp.model.Book">
-        <property name="book" ref = "printBook"/>
+        <property name="book" ref = "printable"/>
     </bean>
 </beans>

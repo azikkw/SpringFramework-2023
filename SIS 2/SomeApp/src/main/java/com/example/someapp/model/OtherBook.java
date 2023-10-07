@@ -1,6 +1,6 @@
 package com.example.someapp.model;
 
-public class Book2 implements PrintBook {
+public class OtherBook implements Printable {
 
     @Override
     public String print(String book) {
